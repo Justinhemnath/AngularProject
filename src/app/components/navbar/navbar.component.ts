@@ -8,4 +8,5 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 })
 export class NavbarComponent {
   faBars = faBars;
+  anchorStyle = "hover:bg-white hover:text-cyan-800 h-full py-3 px-3 transition-colors duration-200"
 }

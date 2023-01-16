@@ -7,6 +7,14 @@ import { Component } from '@angular/core';
 })
 
 export class HomepageComponent {
-  ngOnInit(): void {
+  value: number = 0
+
+  ngOnInit() {
+    console.log(this.value)
+  }
+
+  valChanger(){
+    this.value += 1
+    console.log(this.value)
   }
 }
