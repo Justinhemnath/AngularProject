@@ -1,4 +1,16 @@
-<app-navbar />
+<app-navbar></app-navbar>
 
-<button (click)="valChanger()" class="bg-indigo-800 text-white px-3 py-1">CHANGE VALUE</button>
-<h1>{{value}}</h1>
+<button (click)="valChanger()" class="bg-indigo-800 text-white px-3 py-1">
+  CHANGE VALUE
+</button>
+<h1>{{ value }}</h1>
+
+<div
+  class="p-2 w-[10em] lg:w-[15em] bg-blue-300 lg:bg-red-300"
+  style="transition: all 1s; user-select: none"
+  [style.height]="height"
+  (mouseenter)="heightChanger()"
+  (mouseleave)="heightChanger()"
+>
+  SAMPLE
+</div>

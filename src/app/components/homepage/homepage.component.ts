@@ -8,8 +8,13 @@ import { Component } from '@angular/core';
 
 export class HomepageComponent {
   value: number = 0
+  height: string = "4em"
 
-  valChanger(){
+  valChanger() {
     this.value += 1
+  }
+  
+  heightChanger() {
+    this.height = this.height == "4em" ? "10em" : "4em" 
   }
 }
