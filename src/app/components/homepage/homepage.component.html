@@ -12,5 +12,8 @@
   (mouseenter)="heightChanger()"
   (mouseleave)="heightChanger()"
 >
-  SAMPLE
+  <p *ngIf="height === '10em'">EXPANDING</p>
+  <p *ngIf="height === '4em'">SHRUNK</p>
+
+  <h5>{{ triggerText }}</h5>
 </div>
